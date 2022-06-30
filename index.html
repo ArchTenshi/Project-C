@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Sirin+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/17685b8594.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SeaMate</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Main Header  -->
+    <header class="main-header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img class="logo-img" src="./img/Logo-2.png" alt="" />seamate</a
+          >
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav-button">
+                <a class="nav-link" aria-current="page" href="#cta">Download</a>
+              </li>
+              <li class="nav-item nav-button">
+                <a class="nav-link" href="#cta">Sign-In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sign-up" href="#">Sign-Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1 class="value">Explore</h1>
+            <img
+              class="d-block w-100"
+              src="img/Carousel-image-1.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <h1 class="value">Find</h1>
+            <img
+              class="d-block w-100"
+              src="img/Carousel-image-2.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <h1 class="value">Keep</h1>
+            <img
+              class="d-block w-100"
+              src="img/Carousel-image-3.png"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <h1 class="value">Share</h1>
+            <img
+              class="d-block w-100"
+              src="img/Carousel-image-4.jfif"
+              alt="Fourth slide"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev control"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next control"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="social-media">
+        <div class="col">
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h1 class="title-header">
+        Seamate is a social network created by seafarer for seafarers and their
+        families
+      </h1>
+      <div class="row">
+        <div class="col">
+          <article class="feature-container">
+            <img
+              class="feature-image left-float"
+              src="img/marine-traffic.jpg"
+              alt=""
+            />
+            <h1>Map</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non
+              lectus neque. Maecenas turpis ligula, vulputate eget justo non,
+              porttitor molestie mauris
+            </p>
+          </article>
+          <article class="feature-container">
+            <img
+              class="feature-image left-float"
+              src="img/Crew-list.png"
+              alt=""
+            />
+            <h1>Crew List</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non
+              lectus neque. Maecenas turpis ligula, vulputate eget justo non,
+              porttitor molestie mauris
+            </p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="feature-container">
+            <img
+              class="feature-image right-float"
+              src="img/News-Line.jpg"
+              alt=""
+            />
+            <h1>News Line</h1>
+            <p class="feature-description">
+              Aliquam blandit viverra enim, vel commodo ex aliquam et. Nulla
+              risus risus, ultricies vitae lacus a, malesuada condimentum
+              sapien.
+            </p>
+          </article>
+          <article class="feature-container">
+            <img
+              class="feature-image right-float"
+              src="img/photos.png"
+              alt=""
+            />
+            <h1>Albums</h1>
+            <p class="feature-description">
+              Quisque tristique mauris velit, quis sagittis mi pharetra et.
+              Proin ullamcorper faucibus magna, quis commodo diam. Nullam cursus
+              a diam ac rutrum.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+
+    <section id="cta">
+      <h1 class="cta-header">
+        <span class="reg-number">Number</span> of people joined the maritime
+        family already.
+      </h1>
+      <button class="join-btn">Join us now!</button>
+      <button class="btn btn-light btn-lg download-button" type="button">
+        <i class="fa-brands fa-apple"></i> Download
+      </button>
+      <button class="btn btn-light btn-lg download-button" type="button">
+        <i class="fa-brands fa-google-play"></i>
+        Download
+      </button>
+    </section>
+
+    <!-- Footer Section  -->
+    <section id="footer">
+      <a class="footer-item" href="">Sitemap</a>
+      <a class="footer-item" href="">About us</a>
+      <a class="footer-item" href="">FAQ</a>
+      <a class="footer-item" href="">Contact Us</a>
+      <a class="footer-item" href="">Career</a>
+      <p class="copyright">©Copyright by Dmytro Cherednichenko</p>
+    </section>
+
+    <!-- Modal Sign-Up -->
+    <div
+      class="modal modal-signin d-block py-5 hidden"
+      tabindex="-1"
+      role="dialog"
+      id="modalSignin"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- <h5 class="modal-title">Modal title</h5> -->
+            <h2 class="fw-bold mb-0">Sign up for free</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control rounded-3"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button
+                class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                type="submit"
+              >
+                Sign up
+              </button>
+              <small class="text-muted"
+                >By clicking Sign up, you agree to the terms of use.</small
+              >
+              <hr class="my-4" />
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button
+                class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3"
+                type="submit"
+              >
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+                Sign up with Google
+              </button>
+              <button
+                class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+                type="submit"
+              >
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                Sign up with Facebook
+              </button>
+              <button
+                class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+                type="submit"
+              >
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#github"></use>
+                </svg>
+                Sign up with Twitter
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts Link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
