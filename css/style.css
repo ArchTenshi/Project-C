@@ -2,10 +2,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-header {
   color: #fff;
-  padding: 2%;
 }
 a {
   text-decoration: none;
@@ -16,10 +13,7 @@ li {
 }
 /* Navigation Bar Styles  */
 .logo-img {
-  width: 10%;
-}
-.navbar-nav {
-  --bs-navbar-color: #fff;
+  width: 30%;
 }
 .collapse {
   padding-left: 15%;
@@ -31,21 +25,24 @@ li {
   white-space: nowrap;
 }
 .navbar {
+  --bs-navbar-color: #fff;
+  --bs-navbar-brand-font-size: 3rem;
+  --bs-navbar-toggler-border-color: #fff;
   position: absolute;
-  padding: 3% 5%;
-  width: 90vw;
+  left: 10%;
+  top: 5%;
   z-index: 1;
-  left: 5%;
 }
 .navbar-brand {
-  font-size: 3rem;
+  padding-right: 60%;
 }
 .sign-up {
   font-weight: 600;
   font-size: 2rem;
-  padding-left: 1.5rem;
 }
-
+.modal {
+  color: rgb(65, 63, 63);
+}
 /* Header Section  */
 .main-header {
   padding: 0;
@@ -68,7 +65,6 @@ li {
 
 .value {
   position: absolute;
-
   top: 45%;
   left: 45%;
   color: ;
@@ -76,24 +72,10 @@ li {
   font-size: 5rem;
   z-index: 1;
 }
-
 .title-name {
   font-size: 3rem;
   color: rgb(241, 241, 245);
 }
-
-.title-name:hover {
-  color: #fff;
-}
-
-.carousel-item-next.carousel-item-left {
-  display: block !important;
-}
-.carousel-item {
-  transition: transform 2s ease;
-  opacity: 0.5s ease-out;
-}
-
 .button-other {
   padding: 1rem 1.5rem;
 }
@@ -131,22 +113,20 @@ li {
   width: 100%;
   height: 80vh;
   background-color: #083572;
-  color: #fff;
   padding: 7% 13% 5%;
   text-align: center;
 }
 .cta-header {
   font-weight: 900;
   font-size: 4rem;
-  color: white;
   margin-bottom: 10%;
   text-align: left;
 }
 .join-btn {
+  color: #fff;
   display: block;
   border-radius: 2rem;
   font-weight: 600;
-  color: #ffffff;
   font-size: 3rem;
   background: #f9a800;
   padding: 0 40px 0 40px;
@@ -177,9 +157,7 @@ li {
   margin: 2rem;
   color: #083572;
 }
-.fa-brands {
-  color: #083572;
-}
+
 .download-button:hover {
   background-color: #f9a800;
 }
@@ -198,8 +176,98 @@ li {
   display: block;
   margin: 1rem 0;
   cursor: pointer;
-  color: white;
+}
+.social-media .fa-brands:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 .hidden {
   visibility: hidden;
+}
+
+@media (max-width: 1280px) {
+  .img-1 {
+    content: url("/img/Carousel-image-1-m.png");
+    height: 100%;
+  }
+  .img-2 {
+    content: url("/img/Carousel-image-2-m.png");
+    height: 100%;
+  }
+  .img-3 {
+    content: url("/img/Carousel-image-3-m.png");
+    height: 100%;
+  }
+  .img-4 {
+    content: url("/img/Carousel-image-4-m.png");
+    height: 100%;
+  }
+  .navbar {
+    padding: 5% 13% 5% 7%;
+    position: absolute;
+    z-index: 1;
+  }
+  .navbar-brand {
+    width: 30%;
+    font-size: 1.5rem;
+  }
+  .logo-img {
+    width: 30%;
+  }
+  .h-100 {
+    transform: skewX(50%);
+  }
+  .value {
+    font-size: 2rem;
+  }
+  #features {
+    text-align: center;
+    padding: 3% 7%;
+    height: auto;
+  }
+  .feature-container {
+    text-align: center;
+    padding: 2rem 3rem;
+  }
+  .feature-description {
+    width: auto;
+  }
+
+  .feature-image {
+    float: none;
+    width: 70%;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .title-header {
+    font-size: 1.5rem;
+  }
+  #cta {
+    height: auto;
+  }
+  .cta-header {
+    font-size: 2rem;
+  }
+  .join-btn {
+    font-size: 2rem;
+  }
+  .download-button {
+    margin: 1rem 1.5rem;
+  }
+  .footer-item {
+    font-size: 1rem;
+  }
+  .value {
+    left: 40%;
+  }
+  .social-media {
+    font-size: 2rem;
+  }
+  .collapse {
+    padding-left: 0;
+  }
 }
